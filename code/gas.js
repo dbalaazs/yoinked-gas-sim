@@ -734,7 +734,7 @@ function adjustHeaterTemp() {
   var maxcol = colors.length-1;
   if (col > maxcol) col = maxcol;
   heaterColor = colors[col];
-  console.log("htemp = " + heaterTemp);
+  //console.log("htemp = " + heaterTemp);
 }
 
 function adjustColors() {

@@ -1,0 +1,2 @@
+fix gas.html, so that the sim works even when the chooser is removed || only add a couple options in the chooser, then it wont be suss
+--note to self: To add another preset option, you need to change the setup order in gas.js (ex.: to add brownian motion, you need to put SetupBrownian after Setup1Random (currently the only preset))

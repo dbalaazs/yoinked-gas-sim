@@ -10,10 +10,12 @@
     <div class="canvas">
     <canvas id="glcanvas"></canvas>
     </div>
+
     <div class="sidebar">
       <select id="exampleChooser" onchange="reinit(true)">
-	<option>1 Gas, Random Speeds</option>
-  <!--
+<option>1 Gas, Random Speeds</option>
+
+<!-- 
 	<option>1 Gas, Equal Speeds</option>
 	<option>1 Gas, Extreme Speeds</option>
 	<option>1 Gas, One Moving Molecule</option>
@@ -22,17 +24,18 @@
 	<option>2 Gases, Equal Speeds</option>
 	<option>3 Gases, Random Speeds</option>
 	<option>3 Gases, Equal Speeds</option>
-	<option>Brownian Motion</option>
-	<option>Free Expansion</option> -->
+  <option>Brownian Motion</option>
+	<option>Free Expansion</option> 
+-->
       </select>
       <div class="checkbox">Stopped: <input type="checkbox" id="stoppedCheck"></div>
       <div class="checkbox">Heater: <input type="checkbox" id="heaterCheck"></div>
       <div class="checkbox">Energy Distribution: <input type="checkbox" id="energyCheck"></div>
       <!--<div class="checkbox">Divider: <input type="checkbox" id="dividerCheck"></div>-->
-      <button onclick="reinit(false)" id="reset">Reset</button><br>
+      <button onclick="reinit(true)" id="reset">Reset</button><br>
       <button onclick="expand()" id="expand">Expand</button><br>
       Simulation Speed:
-      <input type="range" min="0" max="100" value="50" class="slider" id="speedBar">
+      <input type="range" min="1" max="100" value="50" class="slider" id="speedBar">
       <br>
       Molecule Count:
       <input type="range" min="1" max="1000" value="2" class="slider" id="molCountBar">
